@@ -1,6 +1,4 @@
 <script>
-    import SearchBar from "./SearchBar.svelte";
-
     export let title = "Temtem Combat Calculator";
 </script>
 
@@ -16,7 +14,6 @@
             <li><a href="/temtem">Temtems</a></li>
         </ul>
     </nav>
-    <SearchBar />
 </header>
 
 <style>

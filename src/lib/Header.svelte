@@ -23,7 +23,7 @@
         margin: 0;
         padding: 20px;
         text-align: center;
-        background-color: var(--color-primary);
+        background-color: var(--color-tertiary);
     }
     header img {
         position: absolute;

@@ -7,7 +7,7 @@
         position: fixed;
         width: 100%;
         bottom: 0;
-        background-color: #f5f5f5;
+        background-color: var(--color-bright);
         padding: 15px;
         text-align: center;
     }

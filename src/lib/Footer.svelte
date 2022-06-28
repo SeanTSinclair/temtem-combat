@@ -1,5 +1,5 @@
 <footer>
-    <p>Copyright TemtemPedia 2022</p>
+    <p>&copy; Temtem Combat Calculator 2022</p>
 </footer>
 
 <style>

@@ -1,35 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
-
-:root {
-    /*--color-primary: rgb(125,126,122);*/
-    /*--color-secondary: rgb(155,156,151);*/
-    /*--color-tertiary: rgb(171,168,165);*/
-    /*--color-dark: rgb(36,40,37);*/
-    /*--color-bright: rgb(189,185,181);*/
-
-    --color-primary: rgb(66,47,43);
-    --color-secondary: rgb(122,91,71);
-    --color-tertiary: rgb(152,131,130);
-    --color-dark: rgb(36,21,18);
-    --color-bright: rgb(216,201,206);
-
-}
-
-body {
-    margin: 0px;
-    background-color: var(--color-secondary);
-}
-
-h1,h2,h3,h4,a,p,li {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--color-dark);
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-dark);
-}
-
-::placeholder {
-    color: var(--color-dark)
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -3,20 +3,12 @@
     import Header from "../lib/Header.svelte";
     import Footer from "../lib/Footer.svelte";
 </script>
+<div class="div flex flex-col justify-between h-screen">
+    <Header />
 
-<Header />
+    <main class="flex flex-col container m-auto">
+        <slot></slot>
+    </main>
 
-<main>
-    <slot></slot>
-</main>
-
-<Footer />
-
-<style>
-    main {
-        display: flex;
-        flex-direction: column;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-</style>
+    <Footer />
+</div>

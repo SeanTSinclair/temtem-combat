@@ -26,51 +26,28 @@
 
 </script>
 
-<div class="main-container">
-    <div class="welcome">
-        <h1>Welcome</h1>
+<div class="container flex flex-col m-auto items-center">
+    <div class="my-4 mx-4">
+        <h1 class="font-medium text-2xl">Welcome</h1>
         <p>This temtem site is a hobby project meant to aid in finding out what types are effective in a combat situation.</p>
         <p>Search for the temtem and select which slot it should go to to find optimal type combinations for your combat encounter!</p>
     </div>
 
-        <input type="text" placeholder="Search" bind:value={search} on:input={searchTemtems}/>
+        <input type="text" class="max-w-min p-2 m-auto my-2 bg-transparent border-2 border-neutral-400 rounded-md" placeholder="Search" bind:value={search} on:input={searchTemtems}/>
         {#if searchResults.length > 0}
-            <div class="temtem-container">
+            <div class="temtem-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
                 {#each searchResults as temtem}
                     <div class="temtem">
+<!--                        <div class="combat-buttons">-->
+<!--                            <button class="slot-one" on:click={() => slotOneLocal = temtem}>Slot 1</button>-->
+<!--                            <button class="slot-two" on:click={() => slotTwoLocal = temtem}>Slot 2</button>-->
+<!--                        </div>-->
                         <TemtemCard temtem={temtem} />
                     </div>
                 {/each}
             </div>
         {/if}
+
+<!--    <CombatDisplay />-->
+
 </div>
-
-<style>
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 100px;
-    }
-
-    .welcome {
-        margin: 50px;
-    }
-
-    .temtem-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    input {
-        max-width: 200px;
-        height: 30px;
-        background-color: var(--color-secondary);
-        border: 1px solid var(--color-dark);
-        border-radius: 5px;
-        filter: brightness(95%);
-        margin : 20px 0;
-    }
-</style>
-
